@@ -40,9 +40,7 @@ function playRound(strategy, regret, playerMove) {
 	const moveValue = getValue(move, opponentMove);
 	updateResult(moveValue)
 	regret = updateRegret(opponentMove, moveValue, regret);
-	console.log('reg:', regret)
 	regretToStrategy(regret);
-	console.log('strat:', strategy)
 }
 
 function regretToStrategy(r) {
