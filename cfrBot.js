@@ -36,7 +36,6 @@ function playRound(strategy, regret, playerMove) {
 	const move = getAction(strategy);
 	console.log('RPS-AI chose ' + NAMES[move]);
 	const opponentMove = playerMove;
-	//const opponentMove = getAction([0.3,0.4,0.3]);
 	const moveValue = getValue(move, opponentMove);
 	updateResult(moveValue)
 	regret = updateRegret(opponentMove, moveValue, regret);
@@ -65,14 +64,6 @@ function normalize(a) {
 	}
 	return [a[0]/sum, a[1]/sum, a[2]/sum];
 }
-
-
-/*
-for (let i=0; i< 1000; i++) {
-	playRound(strategy, regret, 1);
-}
-*/
-
 
 
 // PROMPT 
