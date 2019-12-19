@@ -1,4 +1,4 @@
-console.log('\n***** WELCOME TO RPS-AI *****\n');
+console.log('\n***** WELCOME TO CFR-BOT *****\n');
 
 const ACTIONS = ['r', 'p', 's']; 
 const NAMES = ['Rock', 'Paper', 'Scissors'];
